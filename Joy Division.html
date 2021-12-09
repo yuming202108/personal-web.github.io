@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Division</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .back{
+            position: absolute;
+            z-index: -10;
+            top: -100px;
+            width: 100px;
+            height: 70px;
+            background-color: cornflowerblue;
+            transition: all 0.3s;
+        }
+        .back img{
+            overflow: hidden;
+            transition: all 0.4s; 
+        }
+        .back img:hover
+        {
+            transform: scale(1.1,1.1);
+        }
+        .text{
+            height: 150px;
+            width: 600px;
+            margin: 100px auto 20px;
+            color: white;
+        }
+        .Auto{
+            overflow: hidden;
+            height: 250px;
+            width: 250px;
+            border: rgb(133, 186, 240) 3px solid;
+            transition: all 0.4s;
+            display: inline-block;
+        }
+        .Auto:hover{
+            box-shadow: 0px 0px 1000px blue;
+        }
+        .Auto img{
+            transition: all 0.4s;
+        }
+        .Auto img:hover{
+            transform: scale(1.1,1.1);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><div id="con" class="animate__animated animate__fadeInLeft">
+        <div class="back"><img src="images/箭头_向左.png" alt="" width="90%" height="100%"></div>
+    </div></a>
+    <div class="text">
+        <p>听Joy Division的歌就会发现，他们几乎每首歌都非常压抑，色彩黯淡，隐秘的情绪就像是一头在鼓点深处逡巡的巨兽。
+            作为唯一词作者的柯蒂斯，通过这些歌诉说着、哭喊着。他在生命最后的日子里写就的歌，无一不在讲述自己的苦痛</p>
+    </div>
+
+    <div class="Auto animate__animated animate__fadeIn" style="float: left;margin-left: 320px;">
+        <a href="https://music.163.com/#/album?id=1727475" target="blank"><img src="images/Unknown Pleasures.jpg" width="100%"></a>
+    </div>
+    <div class="Auto animate__animated animate__fadeIn" style="float: right;margin-right: 320px;">
+        <a href="https://music.163.com/#/album?id=1727473" target="blank"><img src="images/closer.jpg" width="100%"></a>
+    </div>
+</body>
+</html>

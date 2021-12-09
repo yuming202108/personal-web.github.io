@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <embed src="/music/Pink Floyd - Breathe (In The Air) (live 1974).mp3" hidden="true" autostart="true" loop="true">
+    <title>Dark side of moon</title>
+    <style>
+        body {
+            background-color: black;
+            /* height: 3000px; */
+        }
+        .back{
+            position: absolute;
+            z-index: -10;
+            width: 100px;
+            height: 70px;
+            background-color: cornflowerblue;
+            transition: all 0.3s;
+        }
+        .back img{
+            overflow: hidden;
+            transition: all 0.4s; 
+        }
+        .back img:hover
+        {
+            transform: scale(1.1,1.1);
+        }
+        .strollContainer {
+            position: absolute;
+            z-index: -1;
+            right: 20px;
+            top: 250px;
+            width: 300px;
+            
+            overflow: auto;
+            margin: 0 auto;
+        }
+        .strollcontent {
+            width: 280px;
+            color: rgba(146, 144, 144, 0.63);
+            text-align: center;
+        }
+        .strollcontent:hover{
+            color: white;
+        }
+        .strollcontent p:hover{
+            background-color: lightgrey;
+            color: red;
+        }
+        .strollContainer::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+        }
+        .strollContainer::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: #535353;
+        }
+        .strollContainer::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            background: #EDEDED;
+        }
+        .text{
+            position: absolute;
+            z-index: -8;
+            left: 200px;
+            width: 800px;
+            height: 2440px;
+            border:1px solid white;
+            color: white;
+        }
+        .text h2{
+            color: red;
+        }
+        .textimg{
+            width: 200px;
+            height: 200px;
+            margin-top: 2px;
+            margin-left: 2px;
+            border: solid 3px purple;
+            overflow: hidden;
+        }
+        .textimg img{
+            transition: all 0.3s;
+        }
+        .textimg img:hover{
+            transform: scale(1.1,1.1);
+        }
+        textarea{
+            position: absolute;
+            z-index: 1;
+            top: 2500px;
+            left: 200px;
+            width: 600px;
+            height: 200px;
+            background-color: black;
+            border: red 3px solid;
+            color: white;
+        }
+        .area{
+            position: absolute;
+            z-index: 1;
+            top: 2800px;
+            width: 600px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><div id="con" class="animate__animated animate__fadeInLeft">
+        <div class="back"><img src="images/箭头_向左.png" alt="" width="90%" height="100%"></div>
+    </div></a>
+    <div class="strollContainer animate__animated animate__fadeInRight" style="height: 400px;">
+        <div class="strollcontent">
+            <p>Breathe</p><p>breathe in the air，</p><p>呼吸，在空气中呼吸，</p><p>Don't be afraid to care，</p><p>不要有任何顾虑，</p>
+            <p>Leave but don't leave me，</p><p>离开，但不要离我而去，</p><p>Look around choose your own ground，</p><p>环顾四周选择你的领地，</p>
+            <p>For long you live and high you fly，</p><p>为了生存你展翅高飞，</p><p>And smiles you'll give and tears you'll cry，</p>
+            <p>去收获欢笑和泪水，</p><p>And all you touch and all you see，</p><p>你全部的所见和所得，</p><p>Is all your life will ever be，</p>
+            <p>是否是你毕生的执着，</p><p>Run rabbit run，</p><p>奔跑吧，兔子，奔跑吧，</p><p>Dig that hole forget the sun，</p><p>忘掉太阳，给自己挖个安乐窝，</p>
+            <p>And when at last the work is done，</p><p>当洞挖好的时候，</p><p>Don't sit down it's time to dig another one，</p>
+            <p>紧接着开始挖另一个，</p><p>For long you live and high you fly，</p><p>为了生存你展翅高飞，</p><p>But only if you ride the tide，</p>
+            <p>但是你要学会随波逐流，</p><p>And balanced on the biggest wave，</p><p>才能在汹涌的浪尖上从容不迫，</p><p>You race towards an early grave，</p>
+            <p>否则就是铤而走险，自掘坟墓，</p>
+        </div>
+    </div>
+
+    <div class="strollContainer animate__animated animate__fadeInRight" style="top: 750px; height: 300px;">
+        <div class="strollcontent">
+            <p>Time</p>
+            <p>Ticking away the moments that make up a dull day，</p><p>为了打发无聊的一天，</p><p>You fritter and waste the hours in an offhand way，</p>
+            <p>随意地浪费那么多时间，</p><p>Kicking around on a piece of ground in your home town，</p><p>漫无目的地在家乡闲逛，</p>
+            <p>Waiting for someone or something to show you the way，</p><p>空等别人来告诉你路在何方，</p><p>Tired of lying in the sunshine staying home to watch the rain，</p>
+            <p>厌倦了躺在太阳底下，厌倦了躲在家中看雨，</p><p>You are young and life is long and there is time to kill today，</p>
+            <p>你还年轻，生活的路还很长，今天又无所事事了，</p><p>And then one day you find ten years have got behind you，</p>
+            <p>突然有一天，你发现十年已经过去，</p><p>No one told you when to run, you missed the starting gun</p><p>没人告诉你应该何时起跑，你早已错过了发令枪</p>
+            <p>And you run and you run to catch up with the sun, but it's sinking</p><p>所以你跑啊跑，想追上太阳，可惜它已经开始下落</p>
+            <p>And racing around to come up behind you again</p><p>它在和你赛跑，从你后面又升了起来</p><p>The sun is the same in the relative way, but you're older</p>
+            <p>太阳还是一样朝着原来的方向，但你却已经变老</p><p>Shorter of breath and one day closer to death</p><p>呼吸急促了，离死亡又近了一天</p>
+            <p>Every year is getting shorter, never seem to find the time</p><p>年复一年，变得越来越短，总觉得找不到时间了</p><p>Plans that either come to naught or half a page of scribbled lines</p>
+            <p>计划最后总是要变成零，或是变成那草草的半页纸</p><p>Hanging on in quiet desperation is the English way</p><p>像一个英国人一样，悬于安静的绝望中</p>
+            <p>The time is gone the song is over, thought I'd something more to say</p><p>时光流逝了，歌声也结束了，但总觉得自己还有话想说...</p>
+            <p>Home, home again</p><p>回家，又回家</p><p>I like to be here when I can</p><p>我希望可以在这里 （家里）</p><p>And when I come home cold and tired</p>
+            <p>当我逐渐冰冷疲惫</p><p>It's good to warm my bones beside the fire</p><p>还是在火堆旁温暖我的身体更好吧</p><p>Far away across the field</p>
+            <p>远处，越过田野的远处</p><p>The tolling of the iron bell</p><p>铁制的钟低缓的鸣响</p><p>Calls the faithful to their knees</p>
+            <p>呼唤着忠诚者使他们屈服</p><p>To hear the softly spoken magic spells</p><p>听到细语倾诉奇妙的咒语</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="strollContainer animate__animated animate__fadeInRight" style="top: 1100px; height: 220px;">
+        <div class="strollcontent">
+            <p>The Great Gig in the Sky</p>
+            <p>And I am not frightened of dying, any time will do</p><p>我不怕死，任何时候都这样</p><p>I don't mind. Why should I be frightened of dying?</p>
+            <p>我不介意。为什么我要怕死？</p><p>There's no reason for it, you've gotta go sometime.</p><p>怕死是毫无理由的，有时你必须离开</p>
+            <p>I never said I was frightened of dying.</p><p>我绝不会说我怕死</p>
+        
+        </div>
+    </div>
+
+    <div class="strollContainer animate__animated animate__fadeInRight" style="top: 1370px; height: 200px;">
+        <div class="strollcontent">
+            <p>Money</p><p>Money get away</p><p>Get a good job with more pay and your OK</p><p>Money it's a gas</p><p>Grab that cash with both hands and make a stash</p>
+            <p>New car caviar four star daydream</p><p>Think I'll buy me a football team</p><p>Money get back</p><p>I'm all right Jack keep your hands off my stack</p>
+            <p>Money it's a hit</p><p>Don't give me that do goody good ********</p><p>I'm in the hi-fidelity first class traveling set</p>
+            <p>And I think I need a Lear jet</p><p>Money it's a crime</p><p>Share it fairly but don't take a slice of my pie</p><p>Money so they say</p>
+            <p>Is the root of all evil today</p><p>But if you ask for a rise it's no surprise that they're</p><p>giving none away</p>
+            <p>HuHuh! I was in the right!</p><p>Yes absolutely in the right!</p><p>I certainly was in the right!</p><p>It came as a heavy blow but we sorted the matter out</p>
+            <p>You was definitely in the right That geezer was cruising for a bruising!</p><p>Yeah! Why does anyone do anything</p>
+            <p>I don't know I was really drunk at the time!</p><p>I was just telling him he couldn't get into number 2 He was asking</p>
+            <p>why he wasn't coming up on freely after I was yelling and</p><p>screaming and telling him why he wasn't coming up on freely</p>
+        </div>
+    </div>
+
+
+    <div class="strollContainer animate__animated animate__fadeInRight" style="top: 1650px; height: 250px;">
+        <div class="strollcontent">
+            <p>Us and Them</p><p>Us and Them</p><p>我们，和他们</p><p>And after all we're only ordinary men</p><p>都终归只是普通人</p>
+            <p>Me, and you</p><p>我，和你</p><p>God only knows it's not what we would choose to do</p><p>只有上帝知道这并非我们所愿</p>
+            <p>"Forward!" he cried from the rear</p><p>“前进！”他从后方喊道</p><p>and the front rank died</p><p>而最前一排的士兵倒下</p>
+            <p>And the General sat, and the lines on the map</p><p>将军坐在帐中，让地图上的线</p><p>moved from side to side</p>
+            <p>从一侧向另一侧移动，Black and Blue，黑，和蓝</p><p>And who knows which is which and who is who</p><p>谁知道哪个是哪个，谁是谁呢？</p>
+            <p>Up and Down</p><p>向上，和向下</p><p>And in the end it's only round and round and round</p><p>最终它只是原地打转</p>
+            <p>"Haven't you heard it's a battle of words"</p><p>“你没听说吗？这是一场言语的战争”</p><p>the poster bearer cried</p>
+            <p>卖报人喊道</p><p>"Listen son," said the man with the gun</p><p>“听着，小子”，持枪的人说道</p><p>"There's room for you inside"</p>
+            <p>里面有给你的地方</p><p>Down and Out</p><p>沉沦，或被逐出</p><p>It can't be helped but there's a lot of it about</p>
+            <p>这都无法被改变，但是其中大有深意</p><p>With, without</p><p>其中，其外</p><p>And who'll deny that's what the fightings all about</p>
+            <p>又有谁会否认这是所有奋斗的目标</p><p>"Get out of the way, it's a busy day</p><p>“给我让道，我今天忙着呢”</p>
+            <p>"And I've got things on my mind"</p><p>“我脑子里有很多事情”</p><p>For want of the price of tea and a slice</p>
+            <p>仅仅想要一点点茶和面包</p><p>The old man died</p><p>老人最终还是死去了</p>
+
+
+        </div>
+    </div>
+
+
+    <div class="strollContainer animate__animated animate__fadeInRight" style="top: 2000px; height: 200px;">
+        <div class="strollcontent">
+            <p>Brain Damage</p><p>The lunatic is on the grass</p><p>这疯子在草地上玩耍</p><p>The lunatic is on the grass</p><p>这疯子在草地上快乐的玩耍</p>
+            <p>Remembering games and daisy chains and laughs</p><p>他只记得儿时的嬉戏打闹、浪漫的雏菊花环和无忧无虑的欢声笑语，恍如昨日</p>
+            <p>Got to keep the loonies on the path</p><p>这疯子被禁止踏足草地</p><p>The lunatic is in the hall</p><p>这个疯子闯进了厅堂</p>
+            <p>The lunatics are in my hall</p><p>疯子们闯进了我的厅堂</p><p>The paper holds their folded faces to the floor</p>
+            <p>报纸被整整齐齐地折叠，平铺在地板上</p><p>And every day the paper boy brings more</p><p>随着报童日复一日的送达，越积越多</p>
+            <p>And if the dam breaks open many years too soon</p><p>如果灾难来临的数年前，水坝就已破败不堪</p><p>And if there is no room upon the hill</p>
+            <p>如果没有人在山坡修建这避难所</p><p>And if your head explodes with dark forbodings too</p><p>如果你也因预见了不详的征兆而崩溃</p>
+            <p>I'll see you on the dark side of the moon</p><p>我将在月之暗面等待着你</p><p>The lunatic is in my head</p><p>这疯子在我脑海中狂笑</p>
+            <p>The lunatic is in my head</p><p>这疯子时不时在我脑海中纵声狂笑</p><p>You raise the blade, you make the change</p>
+            <p>你手起刀落，取出了疯子，让我变得痴呆温顺</p><p>You re-arrange me 'till I'm sane</p><p>你好心地重塑我，让我保持理智</p>
+            <p>You lock the door</p><p>你锁上了大门</p><p>And throw away the key</p><p>并丢弃了钥匙</p><p>There's someone in my head but it's not me</p>
+            <p>我是谁？谁在我脑海深处翻滚？</p><p>And if the cloud bursts, thunder in your ear</p><p>如果阴云炸裂，震耳欲聋</p><p>You shout and no one seems to hear</p>
+            <p>那即使你呼天抢地，也没人会在意</p><p>And if the band you're in starts playing different tunes</p><p>如果你所创立的这支乐队，走上了不同的音乐之路</p>
+            <p>I'll see you on the dark side of the moon</p><p>我将在月之暗面等待着你</p>
+        
+        </div>
+    </div>
+
+    <div class="strollContainer animate__animated animate__fadeInRight" style="top: 2200px; height: 230px;">
+        <div class="strollcontent">
+            <p>Eclipe</p><p>All that you touch</p><p>你接触的所有</p><p>All that you see</p><p>你眼见的所有</p><p>All that you taste</p>
+            <p>你品尝的所有</p><p>All you feel</p><p>你所有的感觉</p><p>All that you love</p><p>你爱的所有</p><p>All that you hate</p>
+            <p>你恨的所有</p><p>All you distrust</p><p>你不相信的所有</p><p>All you save</p><p>你储存的所有</p><p>All that you give</p>
+            <p>你给予的所有</p><p>All that you deal</p><p>你解决的所有</p><p>All that you buy</p><p>你买来</p><p>beg, borrow or steal</p>
+            <p>求得、借入和偷窃的所有</p><p>All you create</p><p>你创造的所有</p><p>All you destroy</p><p>你销毁的所有</p><p>All that you do</p>
+            <p>你所做的</p><p>All that you say</p><p>你所说的</p><p>All that you eat</p><p>你吃下的所有</p><p>everyone you meet</p>
+            <p>你遇见的每个人</p><p>All that you slight</p><p>你轻视的所有</p><p>everyone you fight</p><p>你对抗的每个人</p><p>All that is now</p>
+            <p>那些即是现在</p><p>All that is gone</p><p>那些已然远去</p><p>All that's to come</p><p>那些即将涌来</p><p>and everything under the sun is in tune</p>
+            <p>太阳之下万物和谐</p><p>but the sun is eclipsed by the moon</p><p>但日全食悄然而至</p>
+        </div>
+    </div>
+
+    <div class="text animate__animated animate__fadeIn">
+        <a href="pink intro.html"><div class="textimg"><img src="images/pink1.jpg" alt="" width="100%" height="100%"></div></a>
+
+        <h2>1.speak to me/breathe</h2>
+        <p>Speak to Me是专辑开篇序曲，但这个只有1分零几秒的序曲和第二首Breathe连接得是如此紧密，
+        以至于让人误以为这两首是一首歌曲，所以在很多版本中，干脆就把两首作为一首，题为Speak to Me/ Breathe。</p>
+            Speak to Me古怪的地方不只于此，这甚至是几乎没有旋律的序曲，只有类似心跳一般的脚步声、机翼旋转的声音、
+            Nick Mason喃喃自语声和诡异的笑声……Nick Mason自语着：</br>
+
+            "I've been mad for fucking years, absolutely years, been over the edge for yonks, been working me buns off for bands..."
+        
+            "I've always been mad, I know I've been mad, like the most of us...very hard to explain why you're mad, even if you're not mad..."
+        </p>
+        <p>
+            随着一段尖叫声，Breathe出现了，曲子真正的旋律随着吉他和键盘开始出现，缓缓地、从容不迫地带你进入迷离、梦幻的嗑药状态。
+        </p>
+        <p>Run, rabbit run.</p>
+        <p>Dig that hole, forget the sun,</p>
+        <p>And when at last the work is done.</p>
+        <p>Don't sit down it's time to dig another one.</p>
+        一段节选的歌词，不能再押韵，其意境也是隐晦又深刻：如同兔子一样盲目地奔跑着，挖着洞，挖完再机器地挖另一个。整张经典的迷幻摇滚从这首曲子开始就正式起飞了。
+    </br>那句话怎么说来着？真正嗑high的人都窝在角落抽搐，舞池里甩头的？喝醉了而已。</p>
+
+        <h2>2. On the Run / Time</h2>
+        <p>而第三首 On The Run 是没有任何歌词的音乐，利用各种音效营造了一种充满焦虑与恐惧的气氛。</p>
+        <p>在这种焦虑和恐惧中，进入第四首Time，闹钟、挂钟齐鸣，跟心跳节律同步的节拍声、空灵的鼓点和键盘，带你一起追悔那些虚度的光阴，怀念故乡的美好。</p>
+        <br>歌中这段歌词相当富有哲理：</br>
+        And you run and you run to catch up with the sun，but it’s sinking</br>And racing around to come up behind you again</br>
+        The sun is the same in the relative way，but you’re older</br>And shorter of breath and one day closer to death.</p>
+        <p>三分半开始出现的吉他solo更是将这种情绪推向最高潮，并在歌曲后段加入了充满无奈和后悔情绪的女和声，使这首歌成为摇滚史上最出色的歌曲之一。</p>
+        
+        <h2>3. The Great Gig in the Sky</h2>
+        <p>第五首则是一首充满死亡气息的歌曲，聊完了时间，开始谈起了死亡。</p>
+        <p>听听歌中哀嚎的女声和柔美的钢琴声，那种透露出的死亡气息绝对会让人陷入沉思。</p>
+        <p>"And I am not frightened of dying, any time will do,</br>
+            I don't mind. Why should I be frightened of dying? </br>
+            There's no reason for it, you've gotta go sometime."</br>
+            "If you can hear this whispering you are dying." </br>
+            "I never said I was frightened of dying."</p>
+
+        <h2>4. Money</h2>
+        <p>聊过两个沉重的话题，画风一转，开始调侃起了这堆白花花的钞票。尽管Pink Floyd被普遍认为是艺术和商业结合良好的乐队，
+            但这首歌透露着搞摇滚的艺术骨子对商业利益的满满鄙视。不过讽刺的是，这首歌给他们带来了大把的Money。</p>
+        <p>然后欢快的酒后胡话：</p>
+        <p>"HuHuh! I was in the right!"</br>
+            "Yes, absolutely in the right!"</br>
+            "I certainly was in the right!"</br>
+            "You was definitely in the right. That geezer was cruising for abruising!"</br>
+        </p>
+
+        <h2>5. Us and Them</h2>
+        <p>Us And Them也许是专辑中旋律最优美的一首歌，有很多人对它的喜爱甚至超过了Money和Time。
+            歌曲中同样有萨克斯，只是这里不复高昂和愤怒，变得非常抒情、甚至略有含糊。</p>
+        <p>在经历了将近一半的听觉旅程后，这首歌缓缓道来与战争的对话。</p>
+        <p>"I mean, they're not gunna kill ya, so if you give 'em a quick short,</br>
+            sharp, shock, they won't do it again. Dig it? I mean he get off</br>
+            lightly, 'cos I would've given him a thrashing - I only hit him once!</br>
+            It was only a difference of opinion, but really...I mean good manners</br>
+            don't cost nothing do they, eh?" </p>
+
+        <h2>6. Any Color You Like</h2>
+        <p>又是一段没有任何歌词的纯音乐。闭上眼睛，歌曲音效营造出了一种万花筒般五颜六色，乱花迷眼的恍惚感觉。
+            同时这首歌的立意非常隐晦，没有任何明确的表示。</p>
+
+        <h2>7. Brain Damage</h2>
+        <p>Brain Damage通过描述一个疯子和其受到的遭遇，借以讽刺那些所谓的“正常人”。这是一首非常具有弗洛伊德意味的歌曲，
+            也是整个专辑的精神所在。</p>
+        <p>And if your head explodes with dark forbodings too</br>
+            I’ll see you on the dark side of the moon.</br>
+            And if the band you’re in starts playing different tunes</br>
+            I’ll see you on the dark side of the moon .</p>
+
+        <h2>8. Eclipe</h2>
+        <p>最后的结束曲Eclipse更像是一首诗。歌词采用同样的手法，在罗列了一大堆的「一切」之后，却在结尾说：</p>
+        <p>And everything under the sun is in tune</br>
+            But the sun is eclipsed by the moon.</br>
+            There is no dark side of the moon really</br>
+            Matter of fact it’s all dark.</p>
+        <p>表达出一种苍凉的哀愁和无奈。</p>
+    </div>
+
+
+
+    <textarea name="" id="" cols="30" rows="10">say something</textarea>
+    <div class="area"></div>
+</body>
+</html>

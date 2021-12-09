@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Words</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .back{
+            position: absolute;
+            z-index: -10;
+            width: 100px;
+            height: 70px;
+            background-color: cornflowerblue;
+            transition: all 0.3s;
+        }
+        .back img{
+            overflow: hidden;
+            transition: all 0.4s; 
+        }
+        .back img:hover
+        {
+            transform: scale(1.1,1.1);
+        }
+        .text{
+            width: 1000px;
+            margin: 0 auto;
+            color: white;
+        }
+        .view{
+            width: 150px;
+            height: 70px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            font-size: 27px;
+            background-color: rebeccapurple;
+            margin-left: 250px;
+            margin-top: 100px;
+            transition: all 0.6s;
+        }
+        .view:hover{
+            transform:scale(1.2,1.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="Dream Theater.html"><div class="animate__animated animate__fadeInLeft">
+        <div class="back"><img src="images/箭头_向左.png" alt="" width="90%" height="100%"></div>
+    </div></a>
+
+    <div class="text animate__animated animate__fadeIn">
+        <p>1992年 Dream Theater 发行生涯代表作《Images and Words》，这是他们的第二张录音室专辑。</p>
+        <p>Charlie Dominici 离团后，乐团面试了将近200人才海选出 James LaBrie 担纲主唱，</p>
+        <p>他与吉他手 John Petrucci、键盘手 Kevin Moore、贝斯手 John Myung、鼓手 Mike Portnoy 一起造就脍炙人口的《Pull Me Under》</p>
+    </div>
+    <a href="http://www.kuwo.cn/album_detail/11360" target="blank"><div class="view">链接</div></a>
+</body>
+</html>

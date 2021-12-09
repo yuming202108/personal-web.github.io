@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	@keyframes typing { 
+        from { width: 0; } 
+	} 
+	@keyframes caret { 
+        50% { border-color: transparent; } 
+	} 
+	.typing p { 
+	    width: 5em; 
+	    overflow: hidden; 
+	    white-space: nowrap; 
+	    animation: typing 1.5s steps(10), caret 0.5s steps(5) infinite;
+	}
+ .typing{
+    margin: 500px auto;
+    background-color: black;
+    height: 60px;
+    width: 190px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+  }
+
+	</style>
+	</head>
+	<body>
+	<div class="typing"><p>pink floyd</p></div>
+	<audio src="music/Pink Floyd - Breathe (In The Air) (live 1974).mp3" controls="controls"></audio>
+	</body>
+	</html>
